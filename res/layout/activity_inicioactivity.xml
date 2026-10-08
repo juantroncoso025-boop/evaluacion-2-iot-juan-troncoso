@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cargando..."
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:textAlignment="center"/>
+
+    <!-- Campos para probar el puente con la Raspberry Pi -->
+    <EditText
+        android:id="@+id/etId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese ID (Ej: 1)"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese Nombre"
+        android:minHeight="48dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar en Servidor / Firebase"
+        android:minHeight="48dp"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar desde Servidor"
+        android:minHeight="48dp"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cerrar Sesión"
+        android:minHeight="48dp"
+        android:backgroundTint="#D32F2F"/>
+
+</LinearLayout>
